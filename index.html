@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyBabys - Baby Names</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: Arial; text-align:center; background:#f2f2f2; }
+h1 { color:#ff4081; }
+input, select { padding:10px; margin:10px; width:80%; }
+button { padding:10px 20px; background:#ff4081; color:white; border:none; }
+.name-box { background:white; margin:10px; padding:10px; border-radius:10px; }
+</style>
+</head>
+<body>
+
+<h1>MyBabys.in</h1>
+<h3>Find Perfect Baby Name ❤️</h3>
+
+<input type="text" id="search" placeholder="Search Name...">
+<br>
+<select id="religion">
+<option value="">Select Religion</option>
+<option>Hindu</option>
+<option>Muslim</option>
+<option>Christian</option>
+</select>
+<br>
+<button onclick="showName()">Search</button>
+
+<div id="result"></div>
+
+<script>
+function showName() {
+let name = document.getElementById("search").value;
+let result = document.getElementById("result");
+result.innerHTML = "<div class='name-box'>Suggested Name: " + name + " Kumar</div>";
+}
+</script>
+
+</body>
+</html>
