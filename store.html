@@ -7,13 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { background-color: #f8f9fa; padding: 20px; font-family: sans-serif; }
-        .main-container { max-width: 800px; margin: auto; }
+        .main-container { max-width: 900px; margin: auto; }
         .page-title { text-align: center; color: #ff9f43; font-weight: bold; margin-bottom: 30px; margin-top: 10px; }
-        .product-card { background: white; border-radius: 15px; padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.05); margin-bottom: 20px; border: 1px solid #eee; transition: 0.3s; }
+        
+        /* Category Heading ka naya style */
+        .category-title { color: #4a90e2; font-weight: bold; font-size: 1.5em; margin-top: 40px; margin-bottom: 15px; border-bottom: 2px dashed #ced4da; padding-bottom: 10px; }
+        
+        .product-card { background: white; border-radius: 15px; padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.05); margin-bottom: 20px; border: 1px solid #eee; transition: 0.3s; height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.1); border-color: #ff9f43;}
-        .product-icon { font-size: 3em; margin-bottom: 10px; }
-        .product-title { font-size: 16px; font-weight: bold; color: #333; margin-bottom: 15px; height: 40px; overflow: hidden;}
-        .btn-buy { background-color: #ff9f43; color: white; border: none; border-radius: 8px; padding: 8px 20px; font-weight: bold; text-decoration: none; display: block; width: 100%; }
+        .product-image { max-width: 100%; height: 120px; object-fit: contain; margin-bottom: 15px; align-self: center;}
+        .product-title { font-size: 15px; font-weight: bold; color: #333; margin-bottom: 15px; height: 45px; overflow: hidden;}
+        .btn-buy { background-color: #ff9f43; color: white; border: none; border-radius: 8px; padding: 8px 20px; font-weight: bold; text-decoration: none; display: block; width: 100%; margin-top: auto;}
         .btn-buy:hover { background-color: #e68a00; color: white; }
         .back-btn { display: inline-block; background-color: #4a90e2; color: white; padding: 5px 15px; border-radius: 20px; text-decoration: none; font-size: 14px; font-weight: bold; margin-bottom: 10px; }
     </style>
@@ -23,58 +27,122 @@
 <div class="main-container">
     <a href="index.html" class="back-btn">⬅️ Back to Home</a>
     
-    <h2 class="page-title">🎁 Best Baby Products Store</h2>
+    <h2 class="page-title">🎁 MyBabys.in Mega Store</h2>
 
+    <h3 class="category-title">📚 Brain Development & Story Books</h3>
     <div class="row">
-        
-        <div class="col-6 col-md-4">
+        <div class="col-6 col-md-3">
             <div class="product-card">
-                <div class="product-icon">🧴</div> <div class="product-title">Baby Lotion & Oil</div>
-                <a href="LINK_1_YAHAN_DAALEIN" target="_blank" class="btn-buy">🛒 Check Price</a>
+                <img src="PHOTO_LINK_YAHAN" alt="Baby Book" class="product-image">
+                <div class="product-title">My First Library (10 Board Books)</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
             </div>
         </div>
-
-        <div class="col-6 col-md-4">
+        <div class="col-6 col-md-3">
             <div class="product-card">
-                <div class="product-icon">🧷</div>
-                <div class="product-title">Pampers Premium Pants</div>
-                <a href="LINK_2_YAHAN_DAALEIN" target="_blank" class="btn-buy">🛒 Check Price</a>
+                <img src="PHOTO_LINK_YAHAN" alt="Story Book" class="product-image">
+                <div class="product-title">Bedtime Stories for Babies</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
             </div>
         </div>
-
-        <div class="col-6 col-md-4">
+        <div class="col-6 col-md-3">
             <div class="product-card">
-                <div class="product-icon">🛏️</div>
+                <img src="PHOTO_LINK_YAHAN" alt="Flash Cards" class="product-image">
+                <div class="product-title">Alphabet & Numbers Flash Cards</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="category-title">🧴 Baby Care (Oil, Powder, Lotion)</h3>
+    <div class="row">
+        <div class="col-6 col-md-3">
+            <div class="product-card">
+                <img src="PHOTO_LINK_YAHAN" alt="Massage Oil" class="product-image">
+                <div class="product-title">Himalaya Baby Massage Oil</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="product-card">
+                <img src="PHOTO_LINK_YAHAN" alt="Baby Powder" class="product-image">
+                <div class="product-title">Johnson's Baby Powder</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="product-card">
+                <img src="PHOTO_LINK_YAHAN" alt="Baby Lotion" class="product-image">
+                <div class="product-title">Mamaearth Daily Moisturizing Lotion</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="product-card">
+                <img src="PHOTO_LINK_YAHAN" alt="Baby Wash" class="product-image">
+                <div class="product-title">Sebamed Baby Wash Extra Soft</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="category-title">🧸 Toys & Play</h3>
+    <div class="row">
+        <div class="col-6 col-md-3">
+            <div class="product-card">
+                <img src="PHOTO_LINK_YAHAN" alt="Soft Toy" class="product-image">
+                <div class="product-title">Cute Elephant Plush Toy</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="product-card">
+                <img src="PHOTO_LINK_YAHAN" alt="Rattle" class="product-image">
+                <div class="product-title">Colorful Baby Rattle Set</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="product-card">
+                <img src="PHOTO_LINK_YAHAN" alt="Play Mat" class="product-image">
+                <div class="product-title">Musical Keyboard Play Mat</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="category-title">👕 Clothes & Daily Essentials</h3>
+    <div class="row">
+        <div class="col-6 col-md-3">
+            <div class="product-card">
+                <img src="PHOTO_LINK_YAHAN" alt="Baby Clothes" class="product-image">
+                <div class="product-title">Cotton Rompers (Pack of 3)</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="product-card">
+                <img src="PHOTO_LINK_YAHAN" alt="Diapers" class="product-image">
+                <div class="product-title">Pampers Premium Care Pants</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="product-card">
+                <img src="PHOTO_LINK_YAHAN" alt="Baby Towel" class="product-image">
+                <div class="product-title">Soft Bamboo Baby Bath Towel</div>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="product-card">
+                <img src="PHOTO_LINK_YAHAN" alt="Mosquito Net" class="product-image">
                 <div class="product-title">Baby Mosquito Net Bed</div>
-                <a href="LINK_3_YAHAN_DAALEIN" target="_blank" class="btn-buy">🛒 Check Price</a>
+                <a href="AFFILIATE_LINK_YAHAN" target="_blank" class="btn-buy">🛒 Buy Now</a>
             </div>
         </div>
+    </div>
 
-        <div class="col-6 col-md-4">
-            <div class="product-card">
-                <div class="product-icon">🍼</div>
-                <div class="product-title">Feeding Bottles Set</div>
-                <a href="LINK_4_YAHAN_DAALEIN" target="_blank" class="btn-buy">🛒 Check Price</a>
-            </div>
-        </div>
-
-        <div class="col-6 col-md-4">
-            <div class="product-card">
-                <div class="product-icon">🧸</div>
-                <div class="product-title">Soft Toys for Babies</div>
-                <a href="LINK_5_YAHAN_DAALEIN" target="_blank" class="btn-buy">🛒 Check Price</a>
-            </div>
-        </div>
-
-        <div class="col-6 col-md-4">
-            <div class="product-card">
-                <div class="product-icon">🛁</div>
-                <div class="product-title">Baby Bath Tub</div>
-                <a href="LINK_6_YAHAN_DAALEIN" target="_blank" class="btn-buy">🛒 Check Price</a>
-            </div>
-        </div>
-
-        </div>
 </div>
 
 </body>
